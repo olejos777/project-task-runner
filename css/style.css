@@ -3,6 +3,13 @@
   box-sizing: border-box;
 }
 
+/* Home */
+.background-image {
+  background-image: url(/images/Background_Image.jpg);
+  height: 500px;
+  width: 100%;
+}
+
 .home {
   border: red solid 2px;
 }
