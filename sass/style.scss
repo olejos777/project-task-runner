@@ -2,12 +2,28 @@
 
 $color-main: #ffa502;
 $color-light: #ffffff;
-$font-header: 'Dancing Script', sans-serif;
+$font-header: 'Francois One', sans-serif;
 $font-text: 'Caladea', sans-serif;
 $font-logo: 'Dancing Script';
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+.btn-home {
+  background-color: rgb(255, 217, 0);
+  color: $color-light;
+  font-family: $font-text;
+  font-weight: 700;
+  display: inline-block;
+  min-width: 200px;
+  margin: 0 auto 0 auto;
+  padding: 16px;
+  border-radius: 2px;
+  font-size: 19px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Home */
@@ -18,12 +34,53 @@ $font-logo: 'Dancing Script';
   width: 100%;
 }
 
+.logo {
+  font-family: $font-logo;
+  font-size: 26px;
+  margin: 20px auto 20px 150px;
+  color: yellow;
+  border: orange solid 2px;
+}
 
+.menu {
+  margin: 20px auto 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
+.menu-buttons {
+  list-style-type: none;
+  a {
+    margin: auto 15px auto 15px;
+    color: $color-light;
+    font-family: $font-header;
+  }
+}
+
+.inner-home {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  .inner-home-header{
+    margin: 110px auto auto auto;
+    color: $color-light;
+    font-family: $font-text;
+    font-style: italic;
+    font-size: 42px;
+  }
+  .inner-home-subheader{
+    margin: 10px auto;
+    color: $color-light;
+    font-family: $font-header;
+    font-size: 74px;
+  }
+}
 
 .home {
-    border: red solid 2px;
-  }
+  border: red solid 2px;
+}
   
   .header{
     border: green solid 2px;
