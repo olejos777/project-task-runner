@@ -19,7 +19,26 @@
   cursor: pointer;
 }
 
+.section-title {
+  margin: auto auto 8px auto;
+  font-family: "Francois One", sans-serif;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+.section-subtitle {
+  font-family: "Caladea", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #504f4f;
+}
+
 /* Home */
+.home {
+  padding: 0 0 48px 0;
+  border: red solid 2px;
+}
+
 .background-image {
   background-image: url(/images/Background_Image.jpg);
   height: 500px;
@@ -31,7 +50,6 @@
   font-size: 26px;
   margin: 20px auto 20px 150px;
   color: yellow;
-  border: orange solid 2px;
 }
 
 .menu {
@@ -80,27 +98,132 @@
   font-size: 74px;
 }
 
-.home {
-  border: red solid 2px;
+/* Services*/
+.services {
+  padding: 48px 0 48px 0;
 }
 
-.header {
-  border: green solid 2px;
+.services .services-header {
+  padding: 0 0 40px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-grid-column-align: center;
+      justify-items: center;
 }
 
-.inner-home {
-  border: black solid 2px;
+.services .services-cards {
+  padding: 0 60px 0 60px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
-.menu {
-  border: blue solid 2px;
+.services .services-cards div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-grid-column-align: center;
+      justify-items: center;
+  margin: auto auto 16px auto;
 }
 
-.logo {
-  border: orange solid 2px;
+.services .services-cards div .font-border {
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid 3px gold;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.container {
-  border: yellow solid 2px;
+.services .services-cards div .font-border i {
+  color: gold;
+  font-size: 32px;
+}
+
+.services .services-cards div .service-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.services .services-cards div .service-description {
+  font-size: 11px;
+  color: #504f4f;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Portfolio */
+.portfolio {
+  padding: 48px 0 48px 0;
+  background-color: #f0f0f0;
+}
+
+.portfolio-header {
+  padding: 0 0 40px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-grid-column-align: center;
+      justify-items: center;
+}
+
+.portfolio-cards {
+  padding: 0 0 40px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-grid-column-align: center;
+      justify-items: center;
+}
+
+.portfolio-cards .portfolio-card .container {
+  background: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-grid-column-align: center;
+      justify-items: center;
+}
+
+.portfolio-cards .portfolio-card .container img {
+  width: 350px;
+  margin: 0 0 10px 0;
+}
+
+.portfolio-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: #504f4f;
+  line-height: 1.2;
+  text-align: center;
+  margin: 3;
 }
 /*# sourceMappingURL=style.css.map */

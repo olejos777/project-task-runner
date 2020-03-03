@@ -26,7 +26,25 @@ $font-logo: 'Dancing Script';
   cursor: pointer;
 }
 
+.section-title {
+  margin: auto auto 8px auto;
+  font-family: $font-header;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+.section-subtitle {
+  font-family: $font-text;
+  font-size: 14px;
+  font-style: italic;
+  color: rgb(80, 79, 79);
+}
+
 /* Home */
+
+.home {
+  padding: 0 0 48px 0;
+  border: red solid 2px;
+}
 
 .background-image {
   background-image: url(/images/Background_Image.jpg);
@@ -39,7 +57,6 @@ $font-logo: 'Dancing Script';
   font-size: 26px;
   margin: 20px auto 20px 150px;
   color: yellow;
-  border: orange solid 2px;
 }
 
 .menu {
@@ -78,26 +95,100 @@ $font-logo: 'Dancing Script';
   }
 }
 
-.home {
-  border: red solid 2px;
+/* Services*/
+
+.services {
+  padding: 48px 0 48px 0;
+  .services-header {
+    padding: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .services-cards {
+    padding: 0 60px 0 60px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      margin: auto auto 16px auto;
+      .font-border {
+        text-decoration: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: solid 3px gold;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        i {
+          color: gold;
+          font-size: 32px;
+        }
+      }
+      .service-name {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .service-description {
+        font-size: 11px;
+        color: rgb(80, 79, 79);
+        line-height: 1.2;
+        text-align: center;
+      }
+    }
+  }
 }
-  
-  .header{
-    border: green solid 2px;
+
+/* Portfolio */
+
+.portfolio {
+  padding: 48px 0 48px 0;
+  background-color: rgb(240, 240, 240);
+}
+
+.portfolio-header {
+  padding: 0 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.portfolio-cards {
+  padding: 0 0 40px 0;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  .portfolio-card .container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    img {
+      width: 350px;
+      margin: 0 0 10px 0;
+    }
   }
-  
-  .inner-home{
-    border: black solid 2px;
-  }
-  
-  .menu {
-    border: blue solid 2px;
-  }
-  
-  .logo {
-    border: orange solid 2px;
-  }
-  
-  .container {
-    border: yellow solid 2px;
-  }
+}
+
+.portfolio-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle{
+  font-size: 11px;
+  color: rgb(80, 79, 79);
+  line-height: 1.2;
+  text-align: center;
+  margin: 3;
+}
+
