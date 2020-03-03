@@ -39,6 +39,29 @@ $font-logo: 'Dancing Script';
   color: rgb(80, 79, 79);
 }
 
+.icon-background {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: black;
+  margin: 0 0 0 20px;
+  display: flex;
+  justify-content: center;
+  .icon-white{
+    margin: 10px 0 0 0;
+  }
+}
+
+.icon-backgroundwhite {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: white;
+  margin: 0 0 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
 /* Home */
 
 .home {
@@ -192,3 +215,47 @@ $font-logo: 'Dancing Script';
   margin: 3;
 }
 
+/* Footer */
+
+.footer-icons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.twitter {
+  background: #1DA1F2;
+  color: white;
+  font-size: 22px;
+}
+
+.twitter:hover {
+  background: blue;
+}
+
+.facebook {
+  background: #4267b2;
+  color: white;
+  font-size: 22px;
+}
+
+.facebook:hover {
+  background: blue;
+}
+
+.pinterest {
+  color:#c8232c;
+  font-size: 40px;
+}
+
+.pinterest:hover {
+  background: red;
+}
+
+.google {
+  color: #db4a39;
+  font-size: 40px;
+}
+
+.google:hover {
+  color: red;
+}
