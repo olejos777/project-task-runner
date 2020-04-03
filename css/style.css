@@ -16,6 +16,7 @@
   font-size: 19px;
   text-align: center;
   text-decoration: none;
+  z-index: 1;
   cursor: pointer;
 }
 
@@ -53,7 +54,7 @@
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  background: white;
+  background: #ffffff;
   margin: 0 0 0 20px;
   display: -ms-flexbox;
   display: flex;
@@ -64,20 +65,32 @@
 /* Home */
 .home {
   padding: 0 0 48px 0;
-  border: red solid 2px;
 }
 
 .background-image {
   background-image: url(/images/Background_Image.jpg);
   height: 500px;
   width: 100%;
+  padding: 0;
+  position: relative;
+}
+
+.home-background {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  height: 500px;
+  width: 100%;
+  opacity: 50%;
+  position: absolute;
+  z-index: 0;
 }
 
 .logo {
-  font-family: "Dancing Script";
+  font-family: "Great Vibes", cursive;
   font-size: 26px;
   margin: 20px auto 20px 150px;
-  color: yellow;
+  color: gold;
 }
 
 .menu {
@@ -117,6 +130,7 @@
   font-family: "Caladea", sans-serif;
   font-style: italic;
   font-size: 42px;
+  z-index: 1;
 }
 
 .inner-home .inner-home-subheader {
@@ -124,6 +138,7 @@
   color: #ffffff;
   font-family: "Francois One", sans-serif;
   font-size: 74px;
+  z-index: 1;
 }
 
 /* Services*/
@@ -225,7 +240,8 @@
 }
 
 .portfolio-cards .portfolio-card .container {
-  background: white;
+  height: 500px;
+  background: #ffffff;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -238,21 +254,35 @@
 
 .portfolio-cards .portfolio-card .container img {
   width: 350px;
+  height: 400px;
   margin: 0 0 10px 0;
 }
 
-.portfolio-name {
-  font-size: 16px;
+.portfolio-name-box {
+  height: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.portfolio-name-box .portfolio-name {
+  font-size: 24px;
   font-weight: 700;
   margin: 0;
 }
 
-.subtitle {
-  font-size: 11px;
+.portfolio-name-box .subtitle {
+  font-size: 15px;
   color: #504f4f;
   line-height: 1.2;
   text-align: center;
   margin: 3;
+  font-style: italic;
 }
 
 /* Footer */
@@ -265,7 +295,7 @@
 
 .twitter {
   background: #1DA1F2;
-  color: white;
+  color: #ffffff;
   font-size: 22px;
 }
 
@@ -275,7 +305,7 @@
 
 .facebook {
   background: #4267b2;
-  color: white;
+  color: #ffffff;
   font-size: 22px;
 }
 
