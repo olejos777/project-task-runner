@@ -6,9 +6,9 @@ $font-header: 'Francois One', sans-serif;
 $font-text: 'Caladea', sans-serif;
 $font-logo: 'Great Vibes', cursive;
 
-*, *::before, *::after {
+/**, *::before, *::after {
   box-sizing: border-box;
-}
+}*/
 
 .btn-home {
   background-color: rgb(255, 217, 0);
@@ -25,6 +25,8 @@ $font-logo: 'Great Vibes', cursive;
   text-decoration: none;
   z-index: 1;
   cursor: pointer;
+  position: bottom;
+  align-self: flex-start;
 }
 
 .section-title {
@@ -63,36 +65,44 @@ $font-logo: 'Great Vibes', cursive;
   justify-content: center;
 }
 
+
 /* Home */
 
 .home {
   padding: 0 0 48px 0;
+  position: relative;
+  z-index: 2;
+  height: 500px;
+  max-height: 500px;
 }
 
 .background-image {
   background-image: url(/images/Background_Image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   height: 500px;
   width: 100%;
-  padding: 0;
-  position: relative;
-}
-
-.home-background {
-  padding: 0;
-  margin: 0;
-  background-color: black;
-  height: 500px;
-  width: 100%;
-  opacity: 50%;
   position: absolute;
+  background-size: 100% 500px;
   z-index: 0;
 }
+
+.background-image-color {
+  background: black;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 20%;
+}
+
 
 .logo {
   font-family: $font-logo;
   font-size: 26px;
-  margin: 20px auto 20px 150px;
+  margin: 20px auto 20px 100px;
   color: gold;
+  right: 50px;
   }
 
 .menu {
@@ -106,32 +116,34 @@ $font-logo: 'Great Vibes', cursive;
 .menu-buttons {
   list-style-type: none;
   a {
-    margin: auto 15px auto 15px;
+    margin: auto 0.5vw auto 0.5vw;
     color: $color-light;
     font-family: $font-header;
+    font-size: 15px;
   }
 }
 
 .inner-home {
   display: flex;
   flex-direction: column;
-  justify-items: center;
-  align-items: center;
+  position: relative;
+  height: 400px;
+  max-height: 400px;
   
-  .inner-home-header{
+  .inner-home-header {
     margin: 110px auto auto auto;
     color: $color-light;
     font-family: $font-text;
     font-style: italic;
-    font-size: 42px;
-    z-index: 1;
+    font-size: 40px;
   }
   .inner-home-subheader{
     margin: 10px auto;
     color: $color-light;
     font-family: $font-header;
-    font-size: 74px;
-    z-index: 1;
+    flex-wrap: nowrap;
+    align-self: flex-start;
+    font-size: 50px;
   }
 }
 
@@ -287,4 +299,27 @@ $font-logo: 'Great Vibes', cursive;
 
 .google:hover {
   color: red;
+}
+
+
+@media (min-width: 1500px) {
+  .inner-home {
+    .inner-home-header {
+      font-size: 2.5vw;
+    }
+    .inner-home-subheader{
+      font-size: 4.5vw;
+    }
+  }
+}
+
+@media (min-width: 2300px) {
+  .inner-home {
+    .inner-home-header {
+      font-size: 2vw;
+    }
+    .inner-home-subheader{
+      font-size: 3.5vw;
+    }
+  }
 }
