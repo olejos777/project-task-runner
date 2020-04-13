@@ -71,26 +71,14 @@
   z-index: 2;
   height: 500px;
   max-height: 500px;
-}
-
-.background-image {
-  background-image: url(/images/Background_Image.jpg);
+  background-image: url("/images/Background_Image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 500px;
   width: 100%;
-  position: absolute;
-  background-size: 100% 500px;
+  position: relative;
+  background-size: cover;
   z-index: 0;
-}
-
-.background-image-color {
-  background: black;
-  height: 500px;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  opacity: 20%;
 }
 
 .logo {
